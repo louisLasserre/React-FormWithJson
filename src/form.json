@@ -1,0 +1,61 @@
+[
+  {
+    "component": "form",
+    "class": "form",
+    "children": [
+      {
+        "component": "title",
+        "children": "Subscription form",
+        "class": "formTitle"
+
+      },
+      {
+        "component": "input",
+        "placeholder": "your name here"
+
+
+      },
+      {
+        "component": "label",
+        "children": "Dans quel service travaillez vous ?"
+      },
+      {
+
+        "component": "select",
+        "children": [
+          {
+            "component": "option",
+            "children": "Développement"
+          },
+          {
+            "component": "option",
+            "children": "Marketing"
+          },
+          {
+            "component": "option",
+            "children": "Commerce"
+          },
+          {
+            "component": "option",
+            "children": "produit"
+          },
+          {
+            "component": "option",
+            "children": "Finance"
+          },
+          {
+            "component": "option",
+            "children": "autre"
+          }
+        ]
+      },
+      {
+        "component": "button",
+
+        "children": "confirm",
+        "variant": "contained"
+
+      }
+    ]
+  }
+]

@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
+import RenderForm from "./RenderForm";
+import form from "./form.json"
+//importation des données Json, pour un fichier distant, utilisation possible de fetch
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//stockage des données Json
+const FormData = form;
+
+export default function App() {
+    return (
+        <div className="App">
+
+
+            {FormData.map(config => RenderForm(config))}
+
+
+        </div>
+    );
 }
-
-export default App;
